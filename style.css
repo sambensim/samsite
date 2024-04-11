@@ -1,0 +1,127 @@
+/*#region reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*#endregion*/
+
+/* #region found online  */
+.pattern {
+    width: 100%;
+    height: 100%;
+    --s: 194px; /* control the size */
+    --c1: #f6edb3;
+    --c2: #acc4a3;
+    --_l: #0000 calc(25% / 3), var(--c1) 0 25%, #0000 0;
+    --_g: conic-gradient(from 120deg at 50% 87.5%, var(--c1) 120deg, #0000 0);
+    background: var(--_g), var(--_g) 0 calc(var(--s) / 2),
+    conic-gradient(from 180deg at 75%, var(--c2) 60deg, #0000 0),
+    conic-gradient(from 60deg at 75% 75%, var(--c1) 0 60deg, #0000 0),
+    linear-gradient(150deg, var(--_l)) 0 calc(var(--s) / 2),
+    conic-gradient(
+        at 25% 25%,
+        #0000 50%,
+        var(--c2) 0 240deg,
+        var(--c1) 0 300deg,
+        var(--c2) 0
+    ),
+      linear-gradient(-150deg, var(--_l)) #55897c /* third color here */;
+    background-size: calc(0.866 * var(--s)) var(--s);
+}
+
+/* #endregion */
+
+* {
+    //text-align: left;
+    //outline: 1px dashed red;
+}
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    text-align: left;
+}
+header {
+    position: sticky;
+    top: 0px;
+    padding-top: 1.4rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.2rem;
+    box-shadow: 0px 1px 0px #DFDFDF;
+    background-color: white;
+}
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+.content {
+    background-color: white;
+    height: 100vh;
+    width: fit-content;
+    margin-inline: auto;
+    padding: 2ch;
+}
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.8ch;
+    text-align: center;
+}
+p {
+    font-size: 1.1rem;
+    max-width: 75ch;
+    margin-inline: auto;
+    line-height: 2.5ch;
+    font-weight: 180;
+    text-indent: 5ch;
+    margin-bottom:2.4ch;
+}
+
+::selection {
+    color: white;
+    background: black;
+}

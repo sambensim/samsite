@@ -101,7 +101,7 @@ h1 {
 
 .content {
     background-color: white;
-    height: 100vh;
+    min-height: 100vh;
     width: fit-content;
     margin-inline: auto;
     padding: 2ch;

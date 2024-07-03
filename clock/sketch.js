@@ -1,15 +1,24 @@
+let canvasSize, radius;
+
 function setup() {
-  createCanvas(min(windowWidth, windowHeight), min(windowWidth, windowHeight));
+  updateCanvasSize();
+  let canvas = createCanvas(canvasSize, canvasSize);
+  canvas.parent('canvasContainer');
   sinceLastSecond = 0;
   lastSecond = second();
   clockSpeed = 1;
-  radius = width / 2;
   pixelDensity(1);
 }
 
 function windowResized() {
-  resizeCanvas(min(windowWidth, windowHeight), min(windowWidth, windowHeight))
+  updateCanvasSize();
+  resizeCanvas(canvasSize, canvasSize)
   radius = width / 2;
+}
+
+function updateCanvasSize() {
+  canvasSize = min(windowWidth, windowHeight);
+  radius = canvasSize / 2;
 }
 
 function getAngle(p1x, p1y, p2x, p2y) {

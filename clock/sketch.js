@@ -4,6 +4,7 @@ function setup() {
   lastSecond = second();
   clockSpeed = 1;
   radius = width / 2;
+  pixelDensity(1);
 }
 
 function windowResized() {
@@ -66,7 +67,7 @@ function draw() {
         let vec = pointInfo[0];
         stroke(pointInfo[1]);
         strokeWeight(vec[0]);
-        line(xx, yy, xx + cos(vec[1]) * 3 * vec[0], yy + sin(vec[1]) * 3 * vec[0]);
+        line(xx, yy, xx + cos(vec[1]) * 2 * vec[0], yy + sin(vec[1]) * 2 * vec[0]);
       }
     }
   }

@@ -1,24 +1,13 @@
-let canvasSize, radius;
+let radius;
 
 function setup() {
-  updateCanvasSize();
-  let canvas = createCanvas(canvasSize, canvasSize);
+  let canvas = createCanvas(400, 400);
   canvas.parent('canvasContainer');
   sinceLastSecond = 0;
   lastSecond = second();
   clockSpeed = 1;
-  pixelDensity(1);
-}
-
-function windowResized() {
-  updateCanvasSize();
-  resizeCanvas(canvasSize, canvasSize)
+  pixelDensity(3);
   radius = width / 2;
-}
-
-function updateCanvasSize() {
-  canvasSize = min(windowWidth, windowHeight);
-  radius = canvasSize / 2;
 }
 
 function getAngle(p1x, p1y, p2x, p2y) {
@@ -69,8 +58,8 @@ function draw() {
     [cos(minuteAngle) * (radius * 3 / 4) + radius, sin(minuteAngle) * (radius * 3 / 4) + radius, 2000, color(0, 255, 0)],
     [cos(secondAngle) * (radius / 2) + radius, sin(secondAngle) * (radius / 2) + radius, 600, color(0, 0, 255)]
   ];
-  for (let xx = 5; xx < radius * 2; xx += 5) {
-    for (let yy = 5; yy < radius * 2; yy += 5) {
+  for (let xx = 0; xx < radius * 2; xx += 5) {
+    for (let yy = 0; yy < radius * 2; yy += 5) {
       if ((dist(radius, radius, xx, yy) < radius)) {
         let pointInfo = calculateVectorAndColor(xx, yy, gravPoints);
         let vec = pointInfo[0];

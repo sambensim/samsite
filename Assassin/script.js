@@ -56,8 +56,8 @@ inputBox.addEventListener("keydown", function (e) { //also from StackO
 function submit() {
     myInitials = inputBox.value.toUpperCase();
     let initialList = [
-        "SS"/*Sam*/, "SB"/*Sophia*/, "LL"/*Luca*/, "Ja"/*Jad*/,
-        "MK"/*Mads*/, "EF"/*Eli*/, "DZ"/*Dan*/, "Jz"/*Joaquin*/,
+        "SS"/*Sam*/, "SB"/*Sophia*/, "LL"/*Luca*/, "JA"/*Jad*/,
+        "MK"/*Mads*/, "EF"/*Eli*/, "DZ"/*Dan*/, "JZ"/*Joaquin*/,
         "IG"/*Gaeta*/
     ];
     let killAction = [
@@ -76,9 +76,7 @@ function submit() {
         let myTarget = initialList[(myIndex + 4) % initialList.length];
         let myMethod = killAction[myIndex];
         console.log("Target: " + myTarget + "\nMethod: " + myMethod);
-        // createText("Target:");
         createText(myTarget);
-        // createText("Method:");
         createText(myMethod);
     } else if (badText == undefined) {
         console.log("badText");

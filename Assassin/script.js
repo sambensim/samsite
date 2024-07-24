@@ -1,6 +1,6 @@
 let initialList = [
-    "SS"/*Sam*/, "SB"/*Sophia*/, "LL"/*Luca*/, "Ja"/*Jad*/,
-    "MK"/*Mads*/, "EF"/*Eli*/, "DZ"/*Dan*/, "Jz"/*Joaquin*/
+    "SS"/*Sam*/, "SB"/*Sophia*/, "LL"/*Luca*/, "JA"/*Jad*/,
+    "MK"/*Mads*/, "EF"/*Eli*/, "DZ"/*Dan*/, "JZ"/*Joaquin*/
 ];
 
 let killAction = [
@@ -54,14 +54,15 @@ inputBox.addEventListener("keydown", function (e) { //also from StackO
 });
 
 function submit() {
-    myInitials = inputBox.value;
+    myInitials = inputBox.value.toUpperCase();
     let initialList = [
         "SS"/*Sam*/, "SB"/*Sophia*/, "LL"/*Luca*/, "Ja"/*Jad*/,
-        "MK"/*Mads*/, "EF"/*Eli*/, "DZ"/*Dan*/, "Jz"/*Joaquin*/
+        "MK"/*Mads*/, "EF"/*Eli*/, "DZ"/*Dan*/, "Jz"/*Joaquin*/,
+        "IG"/*Gaeta*/
     ];
     let killAction = [
-        "action1", "action2", "action3", (Math.floor(Math.random() * 79 + 20)).toString(),
-        "action5", "action6", "action7", "action8"
+        "Aghast", "Folly", "Stairwell", (Math.floor(Math.random() * 79 + 20)).toString(),
+        "Descent", "Cacophony", "Archaic", "Moniker", "Keystroke"
     ];
 
     if (initialList.includes(myInitials)) {
@@ -69,7 +70,6 @@ function submit() {
             badText.remove();
         }
         document.getElementById("inputFull").remove();
-        // inputBox.remove();
         document.getElementById("revealButton").remove();
         
         let myIndex = initialList.indexOf(myInitials);
@@ -80,7 +80,7 @@ function submit() {
         createText(myTarget);
         // createText("Method:");
         createText(myMethod);
-    } else {
+    } else if (badText == undefined) {
         console.log("badText");
         badText = createText("Bad Initials");
     }

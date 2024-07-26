@@ -5,7 +5,7 @@ let initialList = [
 ];
 let killAction = [
     "marshmallow", "what's the code?", "jingle bells", "I hate Taylor Swift, "Trumper",
-    "that's my elbow", "licence to kill", "did you hear that noise?", "magician", "tumbleweed",
+    "that's my elbow", "licence to kill", "did you hear that noise?", "magician", "ballet dancer",
     "jinx", "I'm scared", "what do you mean?", "blah blah blah", "that wasn't me",
     "Scottish", "I love Taylor Swift", "what does JD stand for?", "ice ice baby", "virtual insanity",
     "escape room", "now it's legal", "Donald Duck", "fax machine", "I'm an elephant",
@@ -24,7 +24,7 @@ function sfc32(a, b, c, d) {
         return (t >>> 0) / 4294967296;
     }
 }
-const seedgen = () => (3);//(Math.random()*2**32)>>>0;
+const seedgen = () => (46);//(Math.random()*2**32)>>>0;
 const getRand = sfc32(seedgen(), seedgen(), seedgen(), seedgen());
 for(let i=0; i<2; i++) console.log(getRand());
 

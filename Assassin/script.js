@@ -4,7 +4,7 @@ let initialList = [
     "IG"/*Gaeta*/
 ];
 let killAction = [
-    "marshmallow", "what's the code?", "jingle bells", "I hate Taylor Swift", "Aloha",
+    "marshmallow", "what's the code?", "jingle bells", "I hate Taylor Swift", "black sheep",
     "that's my elbow", "licence to kill", "did you hear that noise?", "magician", "ballet dancer",
     "jinx", "I'm scared", "what do you mean?", "blah blah blah", "that wasn't me",
     "Scottish", "I love Taylor Swift", "what does JD stand for?", "ice ice baby", "virtual insanity",

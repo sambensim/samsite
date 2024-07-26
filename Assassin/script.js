@@ -24,7 +24,7 @@ function sfc32(a, b, c, d) {
         return (t >>> 0) / 4294967296;
     }
 }
-const seedgen = () => (119);//(Math.random()*2**32)>>>0;
+const seedgen = () => (77);//(Math.random()*2**32)>>>0;
 const getRand = sfc32(seedgen(), seedgen(), seedgen(), seedgen());
 for(let i=0; i<2; i++) console.log(getRand());
 
@@ -68,7 +68,7 @@ function submit() {
         document.getElementById("revealButton").remove();
         
         let myIndex = initialList.indexOf(myInitials);
-        let myTarget = initialList[(myIndex + 4) % initialList.length];
+        let myTarget = initialList[(myIndex + 1) % initialList.length];
         let myMethod = killAction[myIndex];
         console.log("Target: " + myTarget + "\nMethod: " + myMethod);
         createText(myTarget);

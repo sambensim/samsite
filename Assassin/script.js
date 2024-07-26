@@ -1,10 +1,15 @@
 let initialList = [
     "SS"/*Sam*/, "SB"/*Sophia*/, "LL"/*Luca*/, "JA"/*Jad*/,
-    "MK"/*Mads*/, "EF"/*Eli*/, "DZ"/*Dan*/, "JZ"/*Joaquin*/
+    "MK"/*Mads*/, "EF"/*Eli*/, "DZ"/*Dan*/, "JZ"/*Joaquin*/,
+    "IG"/*Gaeta*/
 ];
-
 let killAction = [
-    "action", "action", "action", toString(Math.floor(Math.random() * 79 + 20))
+    "marshmallow", "what's the code?", "jingle bells", "I hate Taylor Swift, "Trumper",
+    "that's my elbow", "licence to kill", "did you hear that noise?", "magician", "tumbleweed",
+    "jinx", "I'm scared", "what do you mean?", "blah blah blah", "that wasn't me",
+    "Scottish", "I love Taylor Swift", "what does JD stand for?", "ice ice baby", "virtual insanity",
+    "escape room", "now it's legal", "Donald Duck", "fax machine", "I'm an elephant",
+    "love me do", "penguin"
 ];
 
 function sfc32(a, b, c, d) {
@@ -55,16 +60,6 @@ inputBox.addEventListener("keydown", function (e) { //also from StackO
 
 function submit() {
     myInitials = inputBox.value.toUpperCase();
-    let initialList = [
-        "SS"/*Sam*/, "SB"/*Sophia*/, "LL"/*Luca*/, "JA"/*Jad*/,
-        "MK"/*Mads*/, "EF"/*Eli*/, "DZ"/*Dan*/, "JZ"/*Joaquin*/,
-        "IG"/*Gaeta*/
-    ];
-    let killAction = [
-        "Aghast", "Folly", "Stairwell", (Math.floor(Math.random() * 79 + 20)).toString(),
-        "Descent", "Cacophony", "Archaic", "Moniker", "Keystroke"
-    ];
-
     if (initialList.includes(myInitials)) {
         if (badText != undefined) {
             badText.remove();

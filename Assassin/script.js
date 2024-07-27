@@ -1,13 +1,12 @@
 let initialList = [
     "SS"/*Sam*/, "SB"/*Sophia*/, "LL"/*Luca*/, "JA"/*Jad*/,
-    "MK"/*Mads*/, "EF"/*Eli*/, "JZ"/*Joaquin*/,
-    "IG"/*Gaeta*/
+    "MK"/*Mads*/, "EF"/*Eli*/, "JZ"/*Joaquin*/, "IG"/*Gaeta*/
 ];
 let killAction = [
-    "word", "word",
-    "word", "word",
-    "word", "word",
-    "word", "word"
+    "seriously?", "magician",
+    "toenail", "that's my drink",
+    "I've no idea", "helicopter",
+    "are you drunk?", "tiny dancer"
 ];
 
 function sfc32(a, b, c, d) {
@@ -22,7 +21,7 @@ function sfc32(a, b, c, d) {
         return (t >>> 0) / 4294967296;
     }
 }
-const seedgen = () => (77);//(Math.random()*2**32)>>>0;
+const seedgen = () => (641);//(Math.random()*2**32)>>>0;
 const getRand = sfc32(seedgen(), seedgen(), seedgen(), seedgen());
 for(let i=0; i<2; i++) console.log(getRand());
 

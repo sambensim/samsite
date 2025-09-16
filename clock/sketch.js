@@ -1,7 +1,8 @@
 let radius;
 
 function setup() {
-  let canvas = createCanvas(400, 400);
+  let canvas = createCanvas(displayHeight, displayHeight);
+  // let canvas = createCanvas(400, 400);
   canvas.parent('canvasContainer');
   sinceLastSecond = 0;
   lastSecond = second();
@@ -58,14 +59,14 @@ function draw() {
     [cos(minuteAngle) * (radius * 3 / 4) + radius, sin(minuteAngle) * (radius * 3 / 4) + radius, 2000, color(0, 255, 0)],
     [cos(secondAngle) * (radius / 2) + radius, sin(secondAngle) * (radius / 2) + radius, 600, color(0, 0, 255)]
   ];
-  for (let xx = 0; xx < radius * 2; xx += 5) {
-    for (let yy = 0; yy < radius * 2; yy += 5) {
+  for (let xx = 0; xx < radius * 2; xx += width / 80) {
+    for (let yy = 0; yy < radius * 2; yy += width / 80) {
       if ((dist(radius, radius, xx, yy) < radius)) {
         let pointInfo = calculateVectorAndColor(xx, yy, gravPoints);
         let vec = pointInfo[0];
         stroke(pointInfo[1]);
-        strokeWeight(vec[0]);
-        line(xx, yy, xx + cos(vec[1]) * 2 * vec[0], yy + sin(vec[1]) * 2 * vec[0]);
+        strokeWeight(vec[0] * (width / 400) + 0.1);
+        line(xx, yy, xx + cos(vec[1]) * (width / 200) * vec[0], yy + sin(vec[1]) * (width / 200) * vec[0]);
       }
     }
   }

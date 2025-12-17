@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color Dev</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class = "pattern">
+        <header>
+            <h1>Sam</h1>
+        </header>
+        <div class = content id="writing-content">
+            <h2>Writing</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a class="card" href="/writing.html#the-long-death">
+                <h3>The Long Death</h3>
+                <img src="images/Screenshot 2025-09-14 at 18.04.22.png" alt="Three pools of colored dots on a white background.">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </a>
+            <a class="card" href="/writing.html#prereflections">
+                <h3>An 18 year old's reflection of their 20s</h3>
+                <img src="images/Screenshot 2025-09-14 at 18.04.22.png" alt="Three pools of colored dots on a white background.">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </a>
+            <a class="card" href="/writing.html#untitled-hook">
+                <h3>Untitled</h3>
+                <img src="images/Screenshot 2025-09-14 at 18.04.22.png" alt="Three pools of colored dots on a white background.">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </a>
+            <a class="card" href="/writing.html#untitled-hook">
+                <h3>Acedemic Works</h3>
+                <img src="images/Screenshot 2025-09-14 at 18.04.22.png" alt="Three pools of colored dots on a white background.">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </a>
+        </div>
+        <script src="writing.js"></script>
+        <script>
+            window.addEventListener('load', function() {
+                loadWritingFromURL();
+            });
+            window.addEventListener('hashchange', function() {
+                loadWritingFromURL();
+            });
+        </script>
+    </body>
+</html>

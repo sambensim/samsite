@@ -1,0 +1,29 @@
+## Two Short Essays on Art
+
+### _Room in New York_
+
+James Baldwin believed art and its creator to be generally at odds with society and its inhabitants, "[the artist] must actively cultivate that state which most men, nec­essarily, must avoid: the state of being alone.... The aloneness of which I speak is much more like the aloneness of birth or death.... the fearful aloneness of... suffering... of love" (Baldwin). Edward Hopper's paintings as a whole fit as a grand demonstration of human loneliness, but none more so than _Room in New York_. 
+
+![[room-in-new-york.jpg|510]]
+
+The loneliness here is not that of physical or even emotional solitude but one of distance as the faceless individuals (in the purest sense of the word) look away from one another and sit separated by the tall wooden column of brown formed by the union of table and door. The room is motionless and still - its not difficult to imagine the moment immediately following or proceeding this one (as it was and will be likely the same). And the room is quiet with the only likely sound being that of a lone piano key fading as the hammer settles to rest. Even the viewer is isolated. The main scene is pushed into the corner by a thick stone frame drenched in shadow and neither of the room's inhabitants' features are visible beyond the broad strokes.
+
+Baldwin also tells us in his essay "The Creative Process" that "[a] society must assume that it is stable, but the artist must know, and he must let us know, that there is nothing stable under heaven." Hopper presents instability through contradiction, the silence and stillness portray the world of the painting with a stability of subtle misery and melancholy. The viewer, being a member of Baldwin's intentionally delusional society, wants to believe in a positive stability and so the presentation of a negative one means instability must be considered and even hoped for as an alternative to the ceasing of human connection.
+
+### _Book From the Sky_
+
+Xu Bing’s 1988 _Book From the Sky_ is printed entirely in a language that looks like Chinese but is, upon closer inspection, entirely meaningless. The work is clearly a product of its environment - only in a world where Chinese writing exists can a parody so accurate be produced - but it is also a driver of its development, as any commentary inevitably is. The division between artist and art is like that between product and manufacturer. Not so clear is the transition between the two: when does art cease being the produced and become the producer? I posit that the process of creation, as the only intermediary step clearly involving both the artist and their work, is itself this transition.
+
+Where _Book From the Sky_‘s commentary manifests as the literal creation of symbols, Luce Trigaray defines the artistic process as figurative symbol-creation: “The main interest of the present time must focus on the explication of culture - provided we understand culture as the quintessence of symbol-forming mechanisms and art creation processes.” Trigaray claims culture is the atomic unit shared by both art and symbols. If symbols are synecdochic, representing broader ideas, and art is an indirect commentary on those ideas, the common block is a reliance on a process of ideological compression - distilling complexity into digestible forms. Explicating culture, then, means reverse-engineering this compression to analyze not just revealed meaning but the mechanisms enabling it. In Xu Bing’s work, a Trigaray-inspired analysis would seek, not the meaning behind the text or its critique of language’s arbitrariness, but the rules enabling such a critique.
+
+Maurice Merleau-Ponty uses the body as a metaphor for the relationship between art and artist, writing, "movement is not a decision made by the mind... It is the natural sequel to, and maturation of, vision. I say of a thing that it is moved; but my body moves itself; my movement is self-moved.... The enigma derives from the fact that my body simultaneously sees and is seen." Translated to art, this describes the paradox of cause and effect: art emerges from its environment but also reshapes it. If art passively reflects its context, it becomes deterministic, but the act of creation defies this passivity, suggesting art exists in a middle ground. The artistic process _is_ this conversation, where the environment exerts force equal and opposite to the rebelliousness of the art.
+
+### Bibliography
+Baldwin, James. _The Creative Process_. Ridge Press, 1962.
+
+Hopper, Edward. “Room in New York.” _WikiArt_, Apr. 2022, https://www.wikiart.org/en/edward-hopper/not_detected_235607. Accessed June 2025.
+
+Irigaray, Luce. _Why Is Destruction Necessary for Construction?_
+
+Merleau-Ponty, Maurice (1964). Eye and Mind. In The Primacy of Perception. [Evanston, Ill.]: Northwestern University Press. pp. 159-190.
+

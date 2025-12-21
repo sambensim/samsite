@@ -111,6 +111,11 @@ h2 {
     margin-bottom: 0.8ch;
     text-align: center;
 }
+h3 {
+    font-size: 2.0rem;
+    margin-bottom: 0.8ch;
+    text-align: left;
+}
 p {
     font-size: 1.1rem;
     max-width: 75ch;

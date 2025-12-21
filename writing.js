@@ -33,19 +33,40 @@ async function loadAndFormatText(filename) {
     }
 }
 
+function applyItalics(s) {
+    // Replace single *text* (not **)
+    s = s.replace(/(^|[^*])\*([^*\n]+)\*(?=[^*]|$)/g, (_, pre, inner) => pre + `<em>${inner}</em>`);
+    // Replace single _text_ (not __)
+    s = s.replace(/(^|[^_])_([^_\n]+)_(?=[^_]|$)/g, (_, pre, inner) => pre + `<em>${inner}</em>`);
+    return s;
+}
+
+function renderImage(name, max) {
+    const src = `/images/${name}`;
+    const alt = name.replace(/"/g, '');
+    const style = max ? ` style="max-width:${max}px;height:auto;"` : ` style="height:auto;"`;
+    return `<img src="${src}" alt="${alt}"${style}>`;
+}
+
 function formatText(text) {
+
     return text
         .split('\n')
         .map(line => {
             const trimmed = line.trim();
             if (!trimmed) return '';
+            // If the entire line is an image syntax, render it as an image element
+            const imageOnly = trimmed.match(/^!\[\[([^\]\|\]]+)(?:\|(\d+))?\]\]$/);
+            if (imageOnly) {
+                const [, name, max] = imageOnly;
+                return renderImage(name, max);
+            }
             if (trimmed.match(/^#{1,6}\s/)) {
-                console.log(trimmed);
                 const level = trimmed.match(/^#+/)[0].length;
                 const content = trimmed.replace(/^#+\s/, '');
-                return `<h${level}>${content}</h${level}>`;
+                return `<h${level}>${applyItalics(content)}</h${level}>`;
             }
-            return `<p>${trimmed}</p>`;
+            return `<p>${applyItalics(trimmed)}</p>`;
         })
         .join('');
 }

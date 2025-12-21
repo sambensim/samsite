@@ -34,11 +34,10 @@ async function loadAndFormatText(filename) {
 }
 
 function applyItalics(s) {
-    // Replace single *text* (not **)
-    s = s.replace(/(^|[^*])\*([^*\n]+)\*(?=[^*]|$)/g, (_, pre, inner) => pre + `<em>${inner}</em>`);
-    // Replace single _text_ (not __)
-    s = s.replace(/(^|[^_])_([^_\n]+)_(?=[^_]|$)/g, (_, pre, inner) => pre + `<em>${inner}</em>`);
-    return s;
+  // match single *...* (but not **...**) and single _..._ (but not __...__)
+  s = s.replace(/\*(?!\*)([^*\n]+?)\*/g, '<em>$1</em>');
+  s = s.replace(/_(?!_)([^_\n]+?)_/g, '<em>$1</em>');
+  return s;
 }
 
 function renderImage(name, max) {

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Gallery</title>
+    </head>
+    <body class = "pattern">
+        <header>
+            <h1><a href="/">Sam</a></h1>
+        </header>
+        <div class = content>
+            <h2>Photo Gallery</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed facere quibusdam omnis, eius delectus soluta cupiditate itaque in nihil illo vel expedita maxime non laborum hic quisquam mollitia architecto magni.
+            </p>
+            <div class="grid"></div>
+    <script src="images.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            loadImages();
+        });
+        window.addEventListener('hashchange', function() {
+            loadImages();
+        });
+    </script>
+    </body>
+</html>

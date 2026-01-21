@@ -194,3 +194,35 @@ img {
 em {
     font-style: italic;
 }
+
+.grid { /* Pinterest-style masonry layout */
+  column-count: 5;
+  column-gap: 10px;
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    column-count: 4;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    column-count: 1;
+  }
+}
+
+.grid > div {
+    break-inside: avoid;
+}
+
+.grid > div > img {
+    width : 100%;
+    margin-bottom: 10px;
+}
